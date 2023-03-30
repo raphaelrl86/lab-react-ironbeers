@@ -4,6 +4,7 @@ import {Routes, Route} from 'react-router-dom'
 import Beers from './components/Beers';
 import NewBeers from './components/NewBeers';
 import BeerDetail from './components/BeerDetail';
+import RandomBeer from './components/RandomBeer'
 
 
 
@@ -14,7 +15,8 @@ function App() {
             <Route path = '/' element = {<HomePage/>}/>
             <Route path = '/beers' element = {<Beers/>}/>
             <Route path = '/new-beer' element = {<NewBeers/>}/>
-            <Route path = '/random-beer' element = {<BeerDetail/>}/>
+            <Route path = '/random-beer' element = {<RandomBeer/>}/>
+            <Route path = '/beers/:beerId' element = {<BeerDetail/>}/>
         </Routes>
     </div>
   );
